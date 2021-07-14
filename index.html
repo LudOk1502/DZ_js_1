@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
+    let a = 'hello';
+    b = 'owu';
+    c = 'com';
+    d = 'ua';
+    e = 1;
+    f = 10;
+    g = -999;
+    h = 123;
+    i = 3.14;
+    j = 2.7;
+    k = 16;
+    l = true;
+    m = false;
+    //  Вивести кожну змінну за допомогою: console.log , alert, document.write
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+    console.log(e);
+    console.log(f);
+    console.log(g);
+    console.log(h);
+    console.log(i);
+    console.log(j);
+    console.log(k);
+    console.log(l);
+    console.log(m);
+    document.write(`<p>${a}</p>`);
+    document.write(`<p>${b}</p>`);
+    document.write(`<p>${c}</p>`);
+    document.write(`<p>${d}</p>`);
+    document.write(`<p>${e}</p>`);
+    document.write(`<p>${f}</p>`);
+    document.write(`<p>${g}</p>`);
+    document.write(`<p>${h}</p>`);
+    document.write(`<p>${i}</p>`);
+    document.write(`<p>${j}</p>`);
+    document.write(`<p>${k}</p>`);
+    document.write(`<p>${l}</p>`);
+    document.write(`<p>${m}</p>`);
+    /*- Переприсвоїти кожну змінну з завдання вище на будь які довільні значення.
+  Вивести кожну змінну за допомогою: console.log , alert, document.write*/
+    a = 'hi';
+    console.log(a);
+    document.write(`${a} `);
+    b = 'okten';
+    console.log(b);
+    document.write(`${b} `);
+    c = 'web';
+    console.log(c);
+    document.write(`${c} `);
+    d = 'university';
+    console.log(d);
+    document.write(`${d} `);
+    e = 3;
+    console.log(e);
+    document.write(`${e} `);
+    f = 30;
+    console.log(f);
+    document.write(`${f} `);
+    g = -111;
+    console.log(g);
+    document.write(`${g} `);
+    h = 321;
+    console.log(h);
+    document.write(`${h} `);
+    i = 9.8;
+    console.log(i);
+    document.write(`${i} `);
+    j = 0.7;
+    console.log(j);
+    document.write(`${j} `);
+    k = 61;
+    console.log(k);
+    document.write(`${k} `);
+    l = false;
+    console.log(l);
+    document.write(`${l} `);
+    m = true;
+    console.log(m);
+    document.write(`${m} `);
+    //    - Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. Зконкатенувати їх в одну змінну person.
+    let person = {
+        firstName: 'Liudmyla',
+        middleName: 'Bohdanivna',
+        lastName: 'Shpytko'
+    }
+    /*- За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
+    Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".*/
+    let fName = prompt('enter name');
+    mName = prompt('enter middle name');
+    age = prompt('enter age');
+    document.write(`Вітаю ${fName} ${mName}. Тобі ${age} років`);
+    /*- За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+  нехай a = 100; нехай b = '100'; нехай c = true;*/
+    let a1 = 100;
+    b1 = '100';
+    c1 = true;
+    console.log(typeof a1);
+    console.log(typeof b1);
+    console.log(typeof c1);
+    /*- Поставет відповідний оператор в виразах що б вийшов відповідний результат.
+В однакових виразаї не використовувати однакові оператори!!! 5? 6 -> правда
+  5? 6 -> помилковий
+  5? 6 -> помилковий
+  5? 6 -> помилковий
+  10? 10 -> правда
+  10? 10 -> правда
+  10? 10 -> помилковий
+  10? 10 -> помилковий
+  10? 10 -> помилковий
+  123? '123' -> хибне
+  123? '123' -> правда*/
+    let trust = false;
+    trust = 5 < 6;
+    console.log(trust);
+    trust = 5 > 6;
+    console.log(trust);
+    trust = 5 == 6;
+    console.log(trust);
+    trust = 5 === 6;
+    console.log(trust);
+    trust = 10 == 10;
+    console.log(trust);
+    trust = 10 === 10;
+    console.log(trust);
+    trust = 10 > 10;
+    console.log(trust);
+    trust = 10 < 10;
+    console.log(trust);
+    trust = 10 != 10;
+    console.log(trust);
+    trust = 123 === '123';
+    console.log(trust);
+    trust = 123 == '123';
+    console.log(trust);
+    /*Додатково:
+    - Подивіться на наступні вирази і спробуйте вгадати яким буде вивід в консоль. Перевірте себе.*/
+    console.log(132 > 100 && 45 < 12);/*false*/
+    console.log(34 > 33 && 23 < 90);/*true*/
+    console.log(99 > 100 && 45 > 12);/*false*/
+    console.log(132 > 100 || 45 < 12);/*true*/
+    console.log(111 > 11 || 45 < 111);/*true*/
+    console.log((111 > 11 || 45 < 111) && (132 > 100 || 45 < 12));/*true*/
+    console.log((111 > 11 || 45 < 56) || (132 > 100 || 45 < 12));/*true*/
+    console.log((132 > 100 && 45 < 12) && (132 > 100 || 45 < 12));/*false*/
+    console.log((111 > 11 || 45 < 111) || (99 > 100 && 45 > 12));/*true*/
+    console.log(!!'- 1');/*true*/
+    console.log(!!-1);/*true*/
+    console.log(!!'0');/*true*/
+    console.log(!!'null');/*true*/
+    console.log(!!'undefined');/*true*/
+    console.log(!!(3 / 'owu'));/*false*/
+    console.log((111 > 11 || 45 < 111) || !!'0');/*true*/
+    console.log((!!111 == !!11 || 45 < 111) && (99 > 100 && 45 > 12));/*false*/
+</script>
+
+</body>
+</html>
